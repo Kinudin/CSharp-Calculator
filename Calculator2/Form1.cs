@@ -23,6 +23,7 @@ namespace Calculator2
             InitializeComponent();
         }
 
+
         private void buttonDivide_Click(object sender, EventArgs e)
         {
             operand1 = input;
@@ -30,74 +31,61 @@ namespace Calculator2
             input = string.Empty;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void clickNumber(string number)
         {
             this.textBox1.Text = "";
-            input += "1";
+            input += number;
             this.textBox1.Text += input;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            clickNumber("1");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
-            input += "2";
-            this.textBox1.Text += input;
+            clickNumber("2");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
-            input += "3";
-            this.textBox1.Text += input;
+            clickNumber("3");
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
-            input += "4";
-            this.textBox1.Text += input;
+            clickNumber("4");
+
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
-            input += "5";
-            this.textBox1.Text += input;
+            clickNumber("5");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
-            input += "6";
-            this.textBox1.Text += input;
+            clickNumber("6");
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
-            input += "7";
-            this.textBox1.Text += input;
+            clickNumber("7");
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
-            input += "8";
-            this.textBox1.Text += input;
+            clickNumber("8");
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
-            input += "9";
-            this.textBox1.Text += input;
+            clickNumber("9");
         }
 
         private void button0_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
-            input += "0";
-            this.textBox1.Text += input;
+            clickNumber("0");
         }
 
         private void buttonMultiply_Click(object sender, EventArgs e)
